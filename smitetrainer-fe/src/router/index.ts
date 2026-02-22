@@ -12,11 +12,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'multiplayer',
     component: () => import('../views/MultiplayerView.vue'),
   },
-  // {
-  //   path: '/training',
-  //   name: 'training',
-  //   component: () => import('../views/TrainingView.vue'),
-  // },
+  {
+    path: '/training',
+    name: 'training',
+    component: () => import('../views/TrainingView.vue'),
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('../views/AboutView.vue'),
+  },
 ];
 
 const router = createRouter({
